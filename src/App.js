@@ -8,6 +8,7 @@ import NavigationBar from './components/navigation/navigation';
 import Section1 from './components/education/section1';
 import Section2 from './components/projects/section2';
 import Section3 from './components/experiences/section3';
+import Section4 from './components/contact/contact';
 
 function App() {
   // console.log(getStorage)
@@ -42,7 +43,7 @@ function App() {
         <Route exact path = '/education' element = {<Section1 />} />
         <Route exact path = '/projects' element = {<Section2 />} />
         <Route exact path = '/experiences' element = {<Section3 />} />
-        <Route exact path = '/contact' element = {<Section2 />} />
+        <Route exact path = '/contact' element = {<Section4 />} />
       </Routes>
       <input type = "file" 
       onChange = {e => setFile(e.target.files[0])}

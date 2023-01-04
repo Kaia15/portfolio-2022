@@ -10,7 +10,7 @@ const Section3 = () => {
     const descriptions = ['', 'Instructed 30+ high school students to join Florence Day in Ohio, to promote career opportunities in statistics and data science.']
     const a = [0,1]
     const hl = ['Skills: ', 'Awards: ']
-    const d = ['React.js, Express.js, APIs, Material UI, HTML, CSS', '']
+    const d = ['React.js, Express.js, APIs, Material UI, HTML, CSS', 'Forbes B. Wiley Award']
 
     return (
         <div className = {ExpCSS.container}>
