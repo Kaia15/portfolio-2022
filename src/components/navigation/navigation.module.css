@@ -1,0 +1,8 @@
+@media (min-width: 1100px) {
+    .bar {
+        display: flex;
+        flex-direction: row;
+        height: 50px;
+        padding: 12px 28vw;
+    }
+}

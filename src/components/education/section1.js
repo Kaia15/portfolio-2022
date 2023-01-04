@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { storage } from "../fire/firebase";
+import { storage } from "../../fire/firebase";
 import { ref, getDownloadURL, listAll } from 'firebase/storage';
 import { Card, CardMedia, CardContent, Typography, Box, ListItem, List, ListItemText } from "@mui/material";
 import Divider from '@mui/material/Divider';
+import EduCSS from './edu.module.css';
 
 const Section1 = () => {
     const [eduUrls, setEduUrls] = useState([])
@@ -15,26 +16,26 @@ const Section1 = () => {
       }, [])
     console.log(eduUrls)
     return (
-        <div>
+        <div className={EduCSS.box}>
             <div style = {{display: 'flex', flexDirection: 'row'}}>
             <p style = {{fontSize: '32px', 
                 fontFamily: '"Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif,"SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace', 
                 fontWeight: 'bolder', margin: '32px 0px 0px 16vw', color: '#64ffda'}}> 01 </p>
             <Divider orientation="horizontal" style = {{backgroundColor: '#ccd6f6', margin: '54px 10px', width: '180px'}}/>
             </div>
-            <div style = {{minHeight: '720px', color: '#a8b2d1', margin: '0px 12px', fontSize: '20px', padding: '0px 20vw'}}>
+            <div className={EduCSS.container}>
             {eduUrls !== null && eduUrls.map(url => {
                 return (
                     <div>
-                    <Card sx={{ display: 'flex', margin: '12px', backgroundColor: '#0a192f', color: '#ccd6f6'}}>
+                    <Card className = {EduCSS.card} style = {{backgroundColor: '#0a192f', color: '#ccd6f6'}}>
                     <CardMedia
                         component="img"
-                        sx={{ width: 400, height: 400 }}
+                        className = {EduCSS.image}
                         image={url}
                         alt="Denison"
                     />
                     <Box sx={{ display: 'flex', flexDirection: 'column'}}>
-                        <CardContent sx={{ flex: '1 0 auto', margin: '8vh 32px' }}>
+                        <CardContent className = {EduCSS.content}>
                         <Typography component="div" style = {{fontSize: '24px', 
                 fontFamily: '"Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif,"SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace', 
                 fontWeight: 'bolder', padding: '0px 20px'}}>

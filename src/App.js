@@ -3,10 +3,10 @@ import {storage} from './fire/firebase'
 import { ref, uploadBytes, getDownloadURL, listAll } from 'firebase/storage';
 import { Routes, Route } from 'react-router-dom';
 import {React, useEffect, useState } from 'react';
-import Banner from './components/banner';
-import NavigationBar from './components/navigation';
-import Section1 from './components/section1';
-import Section2 from './components/section2';
+import Banner from './components/banner/banner';
+import NavigationBar from './components/navigation/navigation';
+import Section1 from './components/education/section1';
+import Section2 from './components/projects/section2';
 
 function App() {
   // console.log(getStorage)
@@ -46,7 +46,7 @@ function App() {
       <input type = "file" 
       onChange = {e => setFile(e.target.files[0])}
       />
-      <button onClick = {() => uploadFiles('education',file)} disabled = {!file}>
+      <button onClick = {() => uploadFiles('projects',file)} disabled = {!file}>
         Upload files
       </button>
     </div>

@@ -1,6 +1,9 @@
 import React, {useState} from 'react'
-import { Tabs, Tab } from '@mui/material';
+import Tabs, { tabsClasses } from '@mui/material/Tabs';
+import Tab from '@mui/material/Tab';
 import { useNavigate } from 'react-router-dom';
+// import SchoolIcon from '@mui/icons-material/School';
+import NavigationCSS from './navigation.module.css'
 
 const NavigationBar = () => {
     const components = ["Home", "Education", "Projects", "Experiences", "Contact"]
@@ -15,13 +18,15 @@ const NavigationBar = () => {
     }
 
     return (
-        <div style = {{display: "flex", flexDirection: "row", height: '50px', padding: '12px 28vw', position: 'sticky'}}>
+        <div className={NavigationCSS.bar}>
             <Tabs
+                variant="scrollable"
                 value = {val}
                 onChange = {handleChange}
                 textColor="primary"
                 indicatorColor="primary"
-                aria-label="primary tabs example"
+                scrollButtons={false}
+                aria-label="visible arrows tabs example"
             >
                 {components.map((compo, index) => {
                 let lower = "/" + compo.toLowerCase()
