@@ -1,0 +1,31 @@
+@media (min-width:960px) {
+    .container {
+        min-height: 750px;
+        display: flex;
+        flex-direction: row
+    }
+    .header {
+        flex: 2; 
+        display: flex;
+        flex-direction: column;
+    }
+    .bod {
+        flex: 8;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 959px) {
+    .container {
+        min-height: 810px;
+        display: flex;
+        flex-direction: column;
+    }
+    .header {
+        flex: 1; 
+        display: flex;
+        flex-direction: column;
+    }
+    .bod {
+        flex: 5;
+    }
+}

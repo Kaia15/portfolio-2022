@@ -28,12 +28,9 @@ const Section1 = () => {
                 return (
                     <div>
                     <Card className = {EduCSS.card} style = {{backgroundColor: '#0a192f', color: '#ccd6f6'}}>
-                    <CardMedia
-                        component="img"
-                        className = {EduCSS.image}
-                        image={url}
-                        alt="Denison"
-                    />
+                    <div style = {{flex: '1'}}>
+                    <img src = {url} style = {{width: '100%', height: '100%'}}/>
+                    </div>
                     <Box sx={{ display: 'flex', flexDirection: 'column'}}>
                         <CardContent className = {EduCSS.content}>
                         <Typography component="div" style = {{fontSize: '24px', 

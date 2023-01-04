@@ -3,6 +3,7 @@ import { Divider, Typography, CardActions, Button, Card, CardContent } from "@mu
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LaunchIcon from '@mui/icons-material/Launch';
 import {Link} from 'react-router-dom'
+import ProjectCSS from './projects.module.css';
 
 const Section2 = () => {
     const nums = ['Simply, work effectively', 'Ecommerce-App', 'Drinking behaviors & personalities prediction']
@@ -11,8 +12,8 @@ const Section2 = () => {
     const src = ['', 'https://ecommerce-web-v1.netlify.app']
     const git = ['https://github.com/Kaia15/mern-work-app-v1', 'https://github.com/Kaia15/eccomerce-web-01', 'https://github.com/Kaia15/RProject']
     return (
-        <div style = {{minHeight: '750px', display: 'flex', flexDirection: 'row', }}>
-            <div style = {{flex: '2', display: 'flex', flexDirection: 'column'}}>
+        <div className = {ProjectCSS.container}>
+            <div className = {ProjectCSS.header}>
                 <div style = {{flex: '4'}}></div>
                 <div style = {{display: 'flex', flexDirection: 'row', flex: '2'}}>
                 <p style = {{fontSize: '40px', 
@@ -22,7 +23,7 @@ const Section2 = () => {
                 </div>
                 <div style = {{flex: '4'}}></div>
             </div>
-            <div style = {{flex: '8'}}>
+            <div className={ProjectCSS.bod}>
                 {nums.map((num,id) => {
                     return (
                         <Card style = {{margin: '12px 12vw', minWidth: '275px', backgroundColor: '#0a192f', color: '#ccd6f6', textAlign: 'left'}}>

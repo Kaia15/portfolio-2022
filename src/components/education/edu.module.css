@@ -5,7 +5,7 @@
     .container {
         margin: 0px 12px;
         font-size: 20px;
-        padding: 0px 22vw
+        padding: 0px 12vw
     }
     .card {
         display: flex;
@@ -14,13 +14,9 @@
         color: #ccd6f6;
         flex-direction: row;
     }
-    .image {
-        max-width: 400px; 
-        max-height: 400px;
-    }
     .content {
         flex: 1 0 auto;
-        margin: 8vh 32px
+        margin: 8vh 32px;
     }
 }
 
@@ -32,7 +28,7 @@
         color: #a8b2d1;
         margin: 0px 12px;
         font-size: 20px;
-        padding: 0px 8vw
+        padding: 0px 12vw
     }
     .card {
         display: flex;
@@ -40,10 +36,6 @@
         background-color: #0a192f;
         color: #ccd6f6;
         flex-direction: column;
-    }
-    .image {
-        max-width: 360px; 
-        max-height: 400px;
     }
     .content {
         margin: 2vh 20px

@@ -7,6 +7,7 @@ import Banner from './components/banner/banner';
 import NavigationBar from './components/navigation/navigation';
 import Section1 from './components/education/section1';
 import Section2 from './components/projects/section2';
+import Section3 from './components/experiences/section3';
 
 function App() {
   // console.log(getStorage)
@@ -40,7 +41,7 @@ function App() {
         <Route exact path = '/home' element = {<Banner />}/>
         <Route exact path = '/education' element = {<Section1 />} />
         <Route exact path = '/projects' element = {<Section2 />} />
-        <Route exact path = '/experiences' element = {<Section2 />} />
+        <Route exact path = '/experiences' element = {<Section3 />} />
         <Route exact path = '/contact' element = {<Section2 />} />
       </Routes>
       <input type = "file" 
