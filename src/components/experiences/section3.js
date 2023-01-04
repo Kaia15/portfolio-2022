@@ -17,7 +17,9 @@ const Section3 = () => {
                 <p style = {{fontSize: '40px', 
                     fontFamily: '"Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif,"SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace', 
                     fontWeight: 'bolder', margin: '32px 0px 0px 8vw', color: '#64ffda'}}> 03.1 </p>
-                <Divider orientation="horizontal" className={ExpCSS.divider}/>
+                <div className={ExpCSS.divider}>
+                <Divider orientation="horizontal" />
+                </div>
                 </div>
                 {a.map((b,id) => {
                     return (
@@ -53,7 +55,9 @@ const Section3 = () => {
                 <p style = {{fontSize: '40px', 
                     fontFamily: '"Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif,"SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace', 
                     fontWeight: 'bolder', margin: '32px 0px 0px 8vw', color: '#64ffda'}}> 03.2 </p>
-                <Divider orientation="horizontal" className={ExpCSS.divider}/>
+                <div className={ExpCSS.divider}>
+                <Divider orientation="horizontal" />
+                </div>
                 </div>
                 <div style = {{flex: '4'}}></div>
                 <div style = {{flex: '4'}}></div>
