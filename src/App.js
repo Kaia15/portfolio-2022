@@ -45,7 +45,12 @@ function App() {
         <Route exact path = '/experiences' element = {<Section3 />} />
         <Route exact path = '/contact' element = {<Section4 />} />
       </Routes>
-      
+      <input type = "file" 
+      onChange = {e => setFile(e.target.files[0])}
+      />
+      <button onClick = {() => uploadFiles('projects',file)} disabled = {!file}>
+        Upload files
+      </button>
     </div>
   );
 }
