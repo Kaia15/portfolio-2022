@@ -25,10 +25,9 @@ const Section4 = () => {
                 <a href = 'https://github.com/Kaia15'>
                 <GitHubIcon fontSize='large'/>
                 </a>
-                <a href = 'baotranongtran@gmail.com'>
+                <a href = 'mailto:baotranongtran@gmail.com'>
                 <MailIcon fontSize='large'/>
                 </a>
-                
             </div>
             </div>
         </div>
