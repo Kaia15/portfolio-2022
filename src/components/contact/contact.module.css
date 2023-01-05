@@ -1,6 +1,7 @@
 @media (min-width: 960px) {
     .container {
-        min-height: 750px;
+        min-height: 720px;
+        padding: 72px 0px;
     }
     .icons {
         margin: 4px 12px;

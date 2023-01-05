@@ -19,6 +19,7 @@ const NavigationBar = () => {
 
     return (
         <div className={NavigationCSS.bar}>
+            <div className={NavigationCSS.nav}>
             <Tabs
                 variant="scrollable"
                 value = {val}
@@ -35,6 +36,8 @@ const NavigationBar = () => {
                 )
                 })}
             </Tabs>
+            </div>
+            
         </div>
     )
 }

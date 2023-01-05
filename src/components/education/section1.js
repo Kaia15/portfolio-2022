@@ -17,10 +17,10 @@ const Section1 = () => {
     console.log(eduUrls)
     return (
         <div className={EduCSS.box}>
-            <div style = {{display: 'flex', flexDirection: 'row'}}>
+            <div style = {{display: 'flex', flexDirection: 'row', margin: '0px 12vw'}}>
             <p style = {{fontSize: '32px', 
                 fontFamily: '"Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif,"SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace', 
-                fontWeight: 'bolder', margin: '32px 0px 0px 16vw', color: '#64ffda'}}> 01 </p>
+                fontWeight: 'bolder', color: '#64ffda'}}> 01 </p>
             <Divider orientation="horizontal" style = {{backgroundColor: '#ccd6f6', margin: '54px 10px', width: '180px'}}/>
             </div>
             <div className={EduCSS.container}>

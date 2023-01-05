@@ -1,8 +1,8 @@
 @media (min-width:960px) {
     .container {
-        min-height: 750px;
+        min-height: 720px;
         display: flex;
-        flex-direction: row
+        flex-direction: row;
     }
     .header {
         flex: 2; 
