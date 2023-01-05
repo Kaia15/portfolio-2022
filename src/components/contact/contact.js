@@ -16,10 +16,19 @@ const Section4 = () => {
             I am looking forward to any tech opportunities <br /> with any locations inside and outside the U.S.
             </p>
             <div className = {ContactCSS.icons}>
+                <a href = 'https://www.instagram.com/t_trannna/'>
                 <InstagramIcon fontSize='large'/>
+                </a>
+                <a href = 'https://www.linkedin.com/in/tran-ong-26308a20a/'>
                 <LinkedInIcon fontSize='large'/>
+                </a>
+                <a href = 'https://github.com/Kaia15'>
                 <GitHubIcon fontSize='large'/>
+                </a>
+                <a href = 'baotranongtran@gmail.com'>
                 <MailIcon fontSize='large'/>
+                </a>
+                
             </div>
             </div>
         </div>
