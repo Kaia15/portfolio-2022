@@ -1,3 +1,21 @@
-.container {
-    min-height: 750px;
+@media (min-width: 960px) {
+    .container {
+        min-height: 750px;
+    }
+    .icons {
+        margin: 4px 12px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+   
+}
+
+@media (min-width: 360px) and (max-width: 959px) {
+    .icons {
+        margin: 4px 12px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
 }
