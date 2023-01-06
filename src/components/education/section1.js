@@ -38,9 +38,6 @@ const Section1 = () => {
                 fontWeight: 'bolder', padding: '0px 20px'}}>
                             Denison University. 
                         </Typography>
-                        <Typography variant="subtitle1" component="div">
-                            2021-2025
-                        </Typography>
                         <List style = {{margin: '0px 12px'}}>
                         <ListItem>
                             <ListItemText primary="B.S Computer Science" />
