@@ -19,7 +19,7 @@ const Banner = () => {
             <div className={BannerCSS.text}>
             <p style = {{fontSize: 'clamp(40px, 8vw, 80px)', 
                 fontFamily: '"Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif,"SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace', 
-                fontWeight: 'bolder', margin: '54px 0px 4px 0px'}}> Veronica Ong. </p>
+                fontWeight: 'bolder', margin: '54px 0px 4px 0px'}}> Tran Ong. </p>
             <p style={{color: '#a8b2d1', margin: '0px 12px', fontSize: '20px'}}> I'm CS major @Denison, U.S. <br /> 
                 I have passions about coding and tech. I'm in the journey to learn about web and application development!</p>
             
